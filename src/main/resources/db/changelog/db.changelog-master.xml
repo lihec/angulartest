@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet author="of253(lihe)" id="spbt-1.1.1">
+        <preConditions onFail="MARK_RAN" onFailMessage="user_test_table is exists">
+            <not>
+                <tableExists tableName="user_test_table"/>
+            </not>
+        </preConditions>
+        <comment>用户测试表</comment>
+        <createTable remarks="用户测试表" tableName="user_test_table">
+            <column name="usercode" remarks="用户编号" type="int(5)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" remarks="密码" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="of253(lihe)" id="spbt-1.1.2">
+        <preConditions onFail="MARK_RAN" onFailMessage="user_test_table primary key is exists">
+            <not>
+                <primaryKeyExists tableName="user_test_table"/>
+            </not>
+        </preConditions>
+        <addPrimaryKey columnNames="usercode" constraintName="PK_USER_TEST_TABLE" tableName="user_test_table"/>
+    </changeSet>
+
+    <changeSet author="of253(lihe)" id="spbt-1.1.3">
+        <preConditions onFail="MARK_RAN" onFailMessage="user_test_table is already has datas">
+            <sqlCheck expectedResult="0">
+                select count(*) from user_test_table
+            </sqlCheck>
+        </preConditions>
+        <insert tableName="user_test_table">
+            <column name="usercode" value="1"/>
+            <column name="password" value="p1"/>
+        </insert>
+        <insert tableName="user_test_table">
+            <column name="usercode" value="2"/>
+            <column name="password" value="p2"/>
+        </insert>
+        <insert tableName="user_test_table">
+            <column name="usercode" value="3"/>
+            <column name="password" value="p3"/>
+        </insert>
+        <insert tableName="user_test_table">
+            <column name="usercode" value="4"/>
+            <column name="password" value="p4"/>
+        </insert>
+        <insert tableName="user_test_table">
+            <column name="usercode" value="5"/>
+            <column name="password" value="p5"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
