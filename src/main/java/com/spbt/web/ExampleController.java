@@ -33,7 +33,7 @@ public class ExampleController extends BaseController {
 
     @RequestMapping("/hello")
     public @ResponseBody String hello() {
-        return "Hello World!";
+        return "Hello World!!!";
     }
 
     @RequestMapping("/jn")
