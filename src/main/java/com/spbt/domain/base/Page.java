@@ -69,7 +69,7 @@ public class Page {
     /**
      * 添加注释
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-7 下午4:16:50
      * @param totalRecord
      */
@@ -99,7 +99,7 @@ public class Page {
     /**
      * 从PageableVO获取分页参数组成Page
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-7 下午4:14:34
      * @param baseListVO
      * @return

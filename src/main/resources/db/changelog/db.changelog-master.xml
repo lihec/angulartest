@@ -3,7 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
 
-    <changeSet author="of253(lihe)" id="spbt-1.1.1">
+    <changeSet author="lihe" id="spbt-1.1.1">
         <preConditions onFail="MARK_RAN" onFailMessage="user_test_table is exists">
             <not>
                 <tableExists tableName="user_test_table"/>
@@ -20,7 +20,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet author="of253(lihe)" id="spbt-1.1.2">
+    <changeSet author="lihe" id="spbt-1.1.2">
         <preConditions onFail="MARK_RAN" onFailMessage="user_test_table primary key is exists">
             <not>
                 <primaryKeyExists tableName="user_test_table"/>
@@ -29,7 +29,7 @@
         <addPrimaryKey columnNames="usercode" constraintName="PK_USER_TEST_TABLE" tableName="user_test_table"/>
     </changeSet>
 
-    <changeSet author="of253(lihe)" id="spbt-1.1.3">
+    <changeSet author="lihe" id="spbt-1.1.3">
         <preConditions onFail="MARK_RAN" onFailMessage="user_test_table is already has datas">
             <sqlCheck expectedResult="0">
                 select count(*) from user_test_table

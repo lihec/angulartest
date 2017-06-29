@@ -14,7 +14,7 @@ public final class ValidUtil {
     /**
      * 私有构造
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-6 下午4:49:01
      */
     private ValidUtil() {
@@ -101,7 +101,7 @@ public final class ValidUtil {
     /**
      * 是否是手机号码
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-9 上午10:36:24
      * @param str
      * @return

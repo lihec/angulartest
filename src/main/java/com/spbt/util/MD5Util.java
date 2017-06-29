@@ -20,7 +20,7 @@ public final class MD5Util {
     /**
      * 工具类采用私有构造
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-6 下午3:46:16
      */
     private MD5Util() {

@@ -307,7 +307,7 @@ public class PageInterceptor implements Interceptor {
         /**
          * 设置filevalue
          *
-         * @author 李贺[of253]
+         * @author 李贺[lihe]
          * @date 2013-12-9 上午10:31:23
          * @param obj
          * @param fieldName

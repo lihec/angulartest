@@ -24,7 +24,7 @@ public final class IPUtil {
     /**
      * 私有构造
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-6 下午4:55:34
      */
     private IPUtil() {
@@ -87,7 +87,7 @@ public final class IPUtil {
     /**
      * 根据header获取真实ip
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-10 下午3:38:20
      * @param ip
      * @param request

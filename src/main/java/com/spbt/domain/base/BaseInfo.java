@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * pojo基础类，序列化和toString
  *
- * @author 李贺[of253]
+ * @author 李贺[lihe]
  * @date 2013-12-7 下午4:22:51
  *
  */

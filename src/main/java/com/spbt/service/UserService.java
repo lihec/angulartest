@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * user服务
- * @author 李贺[of253]
+ * @author 李贺[lihe]
  * @date 2015/8/10 10:43
  */
 @Service

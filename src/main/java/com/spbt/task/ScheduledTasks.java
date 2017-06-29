@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 定时任务
- * @author 李贺[of253]
+ * @author 李贺[lihe]
  * @date 2015/8/24 11:08
  */
 @Component

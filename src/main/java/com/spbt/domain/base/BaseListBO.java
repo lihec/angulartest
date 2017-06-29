@@ -37,7 +37,7 @@ public class BaseListBO extends BaseInfo {
     /**
      * 获取BaseListBO
      * 
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-7 下午4:27:08
      * @param page
      * @param list

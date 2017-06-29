@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * 基础controller
  *
- * @author 李贺[of253]
+ * @author 李贺[lihe]
  * @date 2013-12-7 下午2:24:15
  */
 public class BaseController {
@@ -77,7 +77,7 @@ public class BaseController {
      *
      * @param request
      * @return
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-9 上午10:29:13
      */
     protected HttpSession getSession(HttpServletRequest request) {
@@ -89,7 +89,7 @@ public class BaseController {
      *
      * @param request
      * @return
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-9 上午10:28:50
      */
     public User getLoginUser(HttpServletRequest request) {
@@ -122,7 +122,7 @@ public class BaseController {
      *
      * @param msg
      * @return
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-9 上午10:22:26
      */
     protected Map<String, Object> getSuccessResult(String msg) {
@@ -133,7 +133,7 @@ public class BaseController {
      * 成功
      *
      * @return
-     * @author 李贺[of253]
+     * @author 李贺[lihe]
      * @date 2013-12-9 上午10:22:39
      */
     protected Map<String, Object> getSuccessResult() {
