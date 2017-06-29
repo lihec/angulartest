@@ -17,3 +17,7 @@ gulp.task('watch', function () {    // 这里的watch，是自定义的，写成
         }, 3000);
     });
 });
+
+gulp.task('default', function() {
+    gulp.start('watch');
+});
