@@ -36,6 +36,20 @@ gulp.task("webpack:build-dev", ['clean:dist'], function(callback) {
     });
 });
 
+
+gulp.task("webpack:watch", ['clean:dist'], function() {
+    livereload.listen();
+    // run webpack
+    var watchConfig = _.merge(webpackConfig, { watch: true });
+    webpack(webpackConfig).watch(200, function(err, stats) {
+        if(err) throw new gutil.PluginError("webpack:build-dev", err);
+        gutil.log("[webpack:build-dev]", stats.toString({
+            colors: true
+        }));
+        livereload.reload();
+    });
+});
+
 // gulp.task("build-dev", ["webpack:build-dev"], function() {
 //     gulp.watch(["src/**/*"], ["webpack:build-dev"]);
 // });
